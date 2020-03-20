@@ -3,7 +3,7 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>leetcode 744 | Anchor Cheng Blog</title>
+  <title>leetcode 744 | Anchor Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="keywords" content="Find Smallest Letter Greater Than Target - Binary Search">
@@ -11,20 +11,20 @@
   
   
   
-  <meta name="description" content="class Solution {    public char nextGreatestLetter(char[] letters, char target) {        int start = 0;        int end = letters.length - 1;        while(start &amp;lt;= end){            int middle = star">
+  <meta name="description" content="12345678910111213141516171819class Solution &amp;#123;    public char nextGreatestLetter(char[] letters, char target) &amp;#123;        int start = 0;        int end = letters.length - 1;        while(start &amp;">
 <meta name="keywords" content="Find Smallest Letter Greater Than Target - Binary Search">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LeetCode 744">
 <meta property="og:url" content="http://www.yuweicheng.com/2019/06/02/Find Smallest Letter Greater Than Target/index.html">
-<meta property="og:site_name" content="Anchor Cheng Blog">
-<meta property="og:description" content="class Solution {    public char nextGreatestLetter(char[] letters, char target) {        int start = 0;        int end = letters.length - 1;        while(start &amp;lt;= end){            int middle = star">
+<meta property="og:site_name" content="Anchor Blog">
+<meta property="og:description" content="12345678910111213141516171819class Solution &amp;#123;    public char nextGreatestLetter(char[] letters, char target) &amp;#123;        int start = 0;        int end = letters.length - 1;        while(start &amp;">
 <meta property="og:locale" content="en-us">
-<meta property="og:updated_time" content="2020-03-20T02:35:04.336Z">
+<meta property="og:updated_time" content="2020-03-20T04:03:49.864Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LeetCode 744">
-<meta name="twitter:description" content="class Solution {    public char nextGreatestLetter(char[] letters, char target) {        int start = 0;        int end = letters.length - 1;        while(start &amp;lt;= end){            int middle = star">
+<meta name="twitter:description" content="12345678910111213141516171819class Solution &amp;#123;    public char nextGreatestLetter(char[] letters, char target) &amp;#123;        int start = 0;        int end = letters.length - 1;        while(start &amp;">
   
-    <link rel="alternate" href="/atom.xml" title="Anchor Cheng Blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Anchor Blog" type="application/atom+xml">
   
 
   
@@ -192,7 +192,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>class Solution {<br>    public char nextGreatestLetter(char[] letters, char target) {<br>        int start = 0;<br>        int end = letters.length - 1;<br>        while(start &lt;= end){<br>            int middle = start + (end - start) / 2;<br>            if(letters[middle] &lt;= target){<br>                start = middle + 1;<br>            } else if (letters[middle] &gt; target){<br>                if(middle - 1 &gt;= start &amp;&amp; letters[middle-1] &gt; target){<br>                    end = middle - 1;<br>                } else {<br>                    return letters[middle];<br>                }<br>            }<br>        }<br>        return letters[0];<br>    }<br>}</p>
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public char nextGreatestLetter(char[] letters, char target) &#123;</span><br><span class="line">        int start = 0;</span><br><span class="line">        int end = letters.length - 1;</span><br><span class="line">        <span class="keyword">while</span>(start &lt;= end)&#123;</span><br><span class="line">            int middle = start + (end - start) / 2;</span><br><span class="line">            <span class="keyword">if</span>(letters[middle] &lt;= target)&#123;</span><br><span class="line">                start = middle + 1;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (letters[middle] &gt; target)&#123;</span><br><span class="line">                <span class="keyword">if</span>(middle - 1 &gt;= start &amp;&amp; letters[middle-1] &gt; target)&#123;</span><br><span class="line">                    end = middle - 1;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="built_in">return</span> letters[middle];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> letters[0];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -215,7 +215,7 @@ var a = new Donate({
       <div>
         <ul class="post-copyright">
           <li class="post-copyright-author">
-          <strong>Post author:  </strong>Anchor Cheng
+          <strong>Post author:  </strong>anchor
           </li>
           <li class="post-copyright-link">
           <strong>Post link:  </strong>
@@ -265,11 +265,11 @@ var a = new Donate({
     
 <nav id="article-nav">
   
-    <a href="/2020/03/18/CoronaVirus/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/20/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Circuit breaker 4 times that halts stock trading for first time since 1997
+          Hello World
         
       </div>
     </a>
@@ -306,7 +306,7 @@ var a = new Donate({
   <div class="container">
       	<div class="row">
 	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 Anchor Cheng Blog All Rights Reserved.</p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 Anchor Blog All Rights Reserved.</p>
 	      
 	      
     		<p class="busuanzi_uv">
@@ -470,10 +470,10 @@ ga('send', 'pageview');
         </div>
          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body">
-            Anchor Cheng Blog
+            Anchor Blog
           </div>
           <div class="panel-body">
-            Copyright © 2020 Anchor Cheng All Rights Reserved.
+            Copyright © 2020 anchor All Rights Reserved.
           </div>
         </div>
       </div>
