@@ -3,7 +3,7 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>leetcode 852 | Anchor Blog</title>
+  <title>leetcode 852 | Anchor Cheng Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="keywords" content="Binary Search - Peak Index in a Mountain Array">
@@ -11,20 +11,20 @@
   
   
   
-  <meta name="description" content="12345678910111213141516class Solution &amp;#123;    public int peakIndexInMountainArray(int[] A) &amp;#123;        int low = 0;        int high = A.length - 1;        while(low &amp;lt; high) &amp;#123;            in">
+  <meta name="description" content="class Solution {    public int peakIndexInMountainArray(int[] A) {        int low = 0;        int high = A.length - 1;        while(low &amp;lt; high) {            int mid = low + (high - low) / 2;">
 <meta name="keywords" content="Binary Search - Peak Index in a Mountain Array">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LeetCode 852">
 <meta property="og:url" content="http://www.yuweicheng.com/2019/05/02/Peak Index In a Mountain Array/index.html">
-<meta property="og:site_name" content="Anchor Blog">
-<meta property="og:description" content="12345678910111213141516class Solution &amp;#123;    public int peakIndexInMountainArray(int[] A) &amp;#123;        int low = 0;        int high = A.length - 1;        while(low &amp;lt; high) &amp;#123;            in">
+<meta property="og:site_name" content="Anchor Cheng Blog">
+<meta property="og:description" content="class Solution {    public int peakIndexInMountainArray(int[] A) {        int low = 0;        int high = A.length - 1;        while(low &amp;lt; high) {            int mid = low + (high - low) / 2;">
 <meta property="og:locale" content="en-us">
-<meta property="og:updated_time" content="2020-03-20T04:03:49.864Z">
+<meta property="og:updated_time" content="2020-03-21T18:20:35.515Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LeetCode 852">
-<meta name="twitter:description" content="12345678910111213141516class Solution &amp;#123;    public int peakIndexInMountainArray(int[] A) &amp;#123;        int low = 0;        int high = A.length - 1;        while(low &amp;lt; high) &amp;#123;            in">
+<meta name="twitter:description" content="class Solution {    public int peakIndexInMountainArray(int[] A) {        int low = 0;        int high = A.length - 1;        while(low &amp;lt; high) {            int mid = low + (high - low) / 2;">
   
-    <link rel="alternate" href="/atom.xml" title="Anchor Blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Anchor Cheng Blog" type="application/atom+xml">
   
 
   
@@ -178,7 +178,7 @@
     <div class="article-meta">
       
 	<a href="/2019/05/02/Peak Index In a Mountain Array/" class="article-date">
-	  <time datetime="2019-05-02T15:22:17.000Z" itemprop="datePublished">2019-05-02</time>
+	  <time datetime="2019-05-02T16:22:17.000Z" itemprop="datePublished">2019-05-02</time>
 	</a>
 
       
@@ -192,7 +192,12 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public int peakIndexInMountainArray(int[] A) &#123;</span><br><span class="line">        int low = 0;</span><br><span class="line">        int high = A.length - 1;</span><br><span class="line">        <span class="keyword">while</span>(low &lt; high) &#123;</span><br><span class="line">            int mid = low + (high - low) / 2; </span><br><span class="line">            <span class="keyword">if</span>(A[mid] &lt; A[mid + 1])&#123;</span><br><span class="line">                low = mid + 1;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                high = mid;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> low;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>class Solution {<br>    public int peakIndexInMountainArray(int[] A) {<br>        int low = 0;<br>        int high = A.length - 1;<br>        while(low &lt; high) {<br>            int mid = low + (high - low) / 2;<br>            if(A[mid] &lt; A[mid + 1]){<br>                low = mid + 1;<br>            } else {<br>                high = mid;<br>            }</p>
+<pre><code>    }
+    return low;
+}
+</code></pre><p>}</p>
+
       
     </div>
     <footer class="article-footer">
@@ -214,7 +219,7 @@ var a = new Donate({
       <div>
         <ul class="post-copyright">
           <li class="post-copyright-author">
-          <strong>Post author:  </strong>anchor
+          <strong>Post author:  </strong>Anchor Cheng
           </li>
           <li class="post-copyright-link">
           <strong>Post link:  </strong>
@@ -305,7 +310,7 @@ var a = new Donate({
   <div class="container">
       	<div class="row">
 	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 Anchor Blog All Rights Reserved.</p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 Anchor Cheng Blog All Rights Reserved.</p>
 	      
 	      
     		<p class="busuanzi_uv">
@@ -469,10 +474,10 @@ ga('send', 'pageview');
         </div>
          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body">
-            Anchor Blog
+            Anchor Cheng Blog
           </div>
           <div class="panel-body">
-            Copyright © 2020 anchor All Rights Reserved.
+            Copyright © 2020 Anchor Cheng All Rights Reserved.
           </div>
         </div>
       </div>

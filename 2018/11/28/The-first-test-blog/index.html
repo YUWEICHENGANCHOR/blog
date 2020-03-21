@@ -3,7 +3,7 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>the first test blog | Anchor Blog</title>
+  <title>the first test blog | Anchor Cheng Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="keywords" content="test">
@@ -11,20 +11,20 @@
   
   
   
-  <meta name="description" content="12345678910111213141516171819202122232425Two Sum solution:public class Solution &amp;#123;    public static int[] twoSum(int[] nums, int target) &amp;#123;        HashMap&amp;lt;Integer, Integer&amp;gt; hm = new Hash">
+  <meta name="description" content="Two Sum solution: public class Solution {    public static int[] twoSum(int[] nums, int target) {        HashMap&amp;lt;Integer, Integer&amp;gt; hm = new HashMap&amp;lt;Integer, Integer&amp;gt;();        for(int i =">
 <meta name="keywords" content="test">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The first test blog">
 <meta property="og:url" content="http://www.yuweicheng.com/2018/11/28/The-first-test-blog/index.html">
-<meta property="og:site_name" content="Anchor Blog">
-<meta property="og:description" content="12345678910111213141516171819202122232425Two Sum solution:public class Solution &amp;#123;    public static int[] twoSum(int[] nums, int target) &amp;#123;        HashMap&amp;lt;Integer, Integer&amp;gt; hm = new Hash">
+<meta property="og:site_name" content="Anchor Cheng Blog">
+<meta property="og:description" content="Two Sum solution: public class Solution {    public static int[] twoSum(int[] nums, int target) {        HashMap&amp;lt;Integer, Integer&amp;gt; hm = new HashMap&amp;lt;Integer, Integer&amp;gt;();        for(int i =">
 <meta property="og:locale" content="en-us">
-<meta property="og:updated_time" content="2020-03-20T04:03:49.864Z">
+<meta property="og:updated_time" content="2020-03-21T18:20:35.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The first test blog">
-<meta name="twitter:description" content="12345678910111213141516171819202122232425Two Sum solution:public class Solution &amp;#123;    public static int[] twoSum(int[] nums, int target) &amp;#123;        HashMap&amp;lt;Integer, Integer&amp;gt; hm = new Hash">
+<meta name="twitter:description" content="Two Sum solution: public class Solution {    public static int[] twoSum(int[] nums, int target) {        HashMap&amp;lt;Integer, Integer&amp;gt; hm = new HashMap&amp;lt;Integer, Integer&amp;gt;();        for(int i =">
   
-    <link rel="alternate" href="/atom.xml" title="Anchor Blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Anchor Cheng Blog" type="application/atom+xml">
   
 
   
@@ -192,7 +192,24 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">Two Sum solution:</span><br><span class="line"></span><br><span class="line">public class Solution &#123;</span><br><span class="line">    public static int[] twoSum(int[] nums, int target) &#123;</span><br><span class="line">        HashMap&lt;Integer, Integer&gt; hm = new HashMap&lt;Integer, Integer&gt;();</span><br><span class="line">        <span class="keyword">for</span>(int i = 0; i &lt; nums.length ; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(hm.containsKey(target-nums[i]))&#123;</span><br><span class="line">                <span class="built_in">return</span> new int[]&#123;hm.get(target-nums[i]),i&#125;;</span><br><span class="line">                    </span><br><span class="line">                    </span><br><span class="line">                &#125;</span><br><span class="line">                hm.put(nums[i], i);</span><br><span class="line">                </span><br><span class="line">            &#125;</span><br><span class="line">                    <span class="built_in">return</span> new int[]&#123;-1,-1&#125;;</span><br><span class="line">                    </span><br><span class="line">                &#125;</span><br><span class="line">                </span><br><span class="line">   </span><br><span class="line">    </span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">            int[] result = twoSum(new int[]&#123;2,7,11,15&#125;,9);</span><br><span class="line">        System.out.println(Arrays.toString(result));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>Two Sum solution:</p>
+<p>public class Solution {<br>    public static int[] twoSum(int[] nums, int target) {<br>        HashMap&lt;Integer, Integer&gt; hm = new HashMap&lt;Integer, Integer&gt;();<br>        for(int i = 0; i &lt; nums.length ; i++) {<br>            if(hm.containsKey(target-nums[i])){<br>                return new int[]{hm.get(target-nums[i]),i};</p>
+<pre><code>            }
+            hm.put(nums[i], i);
+
+        }
+                return new int[]{-1,-1};
+
+            }
+
+
+
+public static void main(String[] args){
+        int[] result = twoSum(new int[]{2,7,11,15},9);
+    System.out.println(Arrays.toString(result));
+}
+</code></pre><p>}</p>
+
       
     </div>
     <footer class="article-footer">
@@ -214,7 +231,7 @@ var a = new Donate({
       <div>
         <ul class="post-copyright">
           <li class="post-copyright-author">
-          <strong>Post author:  </strong>anchor
+          <strong>Post author:  </strong>Anchor Cheng
           </li>
           <li class="post-copyright-link">
           <strong>Post link:  </strong>
@@ -300,7 +317,7 @@ var a = new Donate({
   <div class="container">
       	<div class="row">
 	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 Anchor Blog All Rights Reserved.</p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 Anchor Cheng Blog All Rights Reserved.</p>
 	      
 	      
     		<p class="busuanzi_uv">
@@ -464,10 +481,10 @@ ga('send', 'pageview');
         </div>
          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body">
-            Anchor Blog
+            Anchor Cheng Blog
           </div>
           <div class="panel-body">
-            Copyright © 2020 anchor All Rights Reserved.
+            Copyright © 2020 Anchor Cheng All Rights Reserved.
           </div>
         </div>
       </div>
